@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Varela", sans-serif;
+  color: #909096;
 }
 
 img {
@@ -19,7 +22,7 @@ header {
 
 main {
   width: 90%;
-  background-color: cornflowerblue;
+  background-color: #1d1d1d;
 }
 
 ul {
@@ -64,4 +67,34 @@ nav .contacts li a {
   color: #909096;
   font-size: 21px;
   padding-left: 6px;
+}
+
+.home-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-left: 80px;
+  padding-bottom: 140px;
+}
+.home-title .text-code {
+  font-family: "Comforter", cursive;
+  font-size: 24px;
+}
+.home-title .text-code.pad {
+  padding-top: 25px;
+}
+.home-title h1 {
+  color: white;
+  font-size: 85px;
+  padding-left: 20px;
+}
+.home-title h1 span {
+  background: linear-gradient(to right, #00e9ff, #c177cc, #c59dd0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home-title p {
+  font-size: 23px;
+  padding-left: 20px;
 }

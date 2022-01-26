@@ -1,0 +1,38 @@
+// home main
+
+.home-title {
+    @include display-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-left: 80px;
+    padding-bottom: 140px;
+
+    .text-code {
+        font-family: 'Comforter', cursive;
+        font-size: 24px;
+        
+
+        &.pad {
+            padding-top: 25px;
+        }
+    }
+
+    h1 {
+        color: white;
+        font-size: 85px;
+        padding-left: 20px;
+
+
+        span {
+            background: linear-gradient(to right, #00e9ff, #c177cc, #c59dd0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    p {
+        font-size: 23px;
+        padding-left: 20px;
+    }
+}

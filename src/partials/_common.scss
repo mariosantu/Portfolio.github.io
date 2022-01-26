@@ -1,0 +1,34 @@
+// Reset
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+.layout {
+    @include display-flex;
+    height: 100vh;
+}
+
+header {
+    width: 10%;
+}
+
+main {
+    width: 90%;
+    background-color: cornflowerblue;
+}
+
+ul {
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}

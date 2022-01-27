@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comforter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Varela&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../dist/app.css">
@@ -73,10 +76,44 @@
 
         <!-- Main -->
         <main>
-            content contacts
+            <!-- form -->
+            <div class="container">
+                <span class="text-code">
+                    &lt;form&gt;
+                </span>
+                <form action="https://formspree.io/f/xjvlybee" method="POST" id="my-form">
+
+                  <div class="form-group">
+                    <label for="firstName"> First Name</label>
+                    <input type="text" id="firstName" name="firstName">
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="latsName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName">
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                  </div>
+            
+                  <div class="form-group">
+                    <label for="massage">Message</label>
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                  </div>
+            
+                  <button type="submit">Submit</button>
+                </form> 
+            </div>
+              <span class="text-code formspan">
+                &lt;/form&gt;
+              </span>
+             <div id="status"></div>
+            <!-- form end -->
         </main>
         <!-- Main end-->
     </div>
-    
+    <script src="../src/app.js"></script>
 </body>
 </html>

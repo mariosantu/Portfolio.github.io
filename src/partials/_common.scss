@@ -25,6 +25,7 @@ header {
 main {
     width: 90%;
     background-color: $third_color;
+    overflow-y: auto;
 }
 
 ul {
@@ -34,4 +35,16 @@ ul {
         text-decoration: none;
         color: white;
     }
+}
+
+// scrollbar mod
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(197,157,208);
+    background: linear-gradient(6deg, rgba(197,157,208,1) 0%, rgba(193,119,204,1) 24%, rgba(0,233,255,1) 100%);
+    border-radius: 6px;
 }

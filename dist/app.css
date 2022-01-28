@@ -237,6 +237,14 @@ nav .contacts li a {
   font-size: 20px;
 }
 
+h3 {
+  color: white;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, #00e9ff, #c177cc, #c59dd0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .form-group input,
 .form-group textarea {
   width: 100%;

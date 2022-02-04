@@ -42,3 +42,37 @@ nav {
         }
     }
 }
+
+// media query
+
+@media screen and (max-width: 800px) {
+    nav {
+        height: 100%;
+        background-color: $primary_color;
+        @include display-flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    
+        .menu {
+            padding-bottom: 45px;
+            width: 100%;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        .contacts {
+            padding-bottom: 193px;
+            
+            li {
+                display: block;
+    
+                a {
+                    color: $secondary_color;
+                    font-size: 21px;
+                    padding-left: 6px;
+                }
+            }
+        }
+    }
+}

@@ -49,3 +49,14 @@ ul {
     border-radius: 6px;
 }
 
+// common media query
+
+@media screen and (max-width: 800px) {
+    header {
+        width: 0%;
+    }
+
+    main {
+        width: 100%;
+    }
+}

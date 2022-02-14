@@ -43,36 +43,66 @@ nav {
     }
 }
 
+
 // media query
 
 @media screen and (max-width: 800px) {
+
     nav {
-        height: 100%;
-        background-color: $primary_color;
-        @include display-flex;
-        flex-direction: column;
+        display: none;
+        height: 0%;
+    }
+
+    // mobile nav
+    .mobile-nav {
+        padding: 50px 15px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
         justify-content: space-between;
-        align-items: center;
-    
-        .menu {
-            padding-bottom: 45px;
-            width: 100%;
-            text-align: center;
-            font-size: 10px;
+        flex-direction: row;
+        z-index: 1;
+
+        .burger-menu {
+            position: relative;
+
+            &:hover > .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu {
+                position: absolute;
+                right: 0;
+                top: calc(100% + .25rem);
+                background-color: $primary_color;
+                padding: 10px;
+                border-radius: 5px;
+                box-shadow: 0 2px 15px 0 rgba(0, 0, 0, .1);
+                display: none;
+
+                li {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+
+        }
+
+        i {
+            font-size: 30px;
+        }
+
+        img {
+            width: auto;
+            height: 105px;
         }
 
         .contacts {
-            padding-bottom: 193px;
-            
-            li {
-                display: block;
-    
-                a {
-                    color: $secondary_color;
-                    font-size: 21px;
-                    padding-left: 6px;
-                }
-            }
+            padding: 0;
+            padding-right: 37px;
         }
     }
 }

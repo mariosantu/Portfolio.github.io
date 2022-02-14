@@ -44,6 +44,15 @@ ul a {
   border-radius: 6px;
 }
 
+@media screen and (max-width: 800px) {
+  header {
+    width: 0%;
+  }
+
+  main {
+    width: 100%;
+  }
+}
 nav {
   height: 100%;
   background-color: #181818;
@@ -82,29 +91,52 @@ nav .contacts li a {
 
 @media screen and (max-width: 800px) {
   nav {
-    height: 100%;
-    background-color: #181818;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
+    height: 0%;
   }
-  nav .menu {
-    padding-bottom: 45px;
+
+  .mobile-nav {
+    padding: 50px 15px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
-    font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    z-index: 1;
   }
-  nav .contacts {
-    padding-bottom: 193px;
+  .mobile-nav .burger-menu {
+    position: relative;
   }
-  nav .contacts li {
+  .mobile-nav .burger-menu:hover > .dropdown-menu {
     display: block;
   }
-  nav .contacts li a {
-    color: #909096;
-    font-size: 21px;
-    padding-left: 6px;
+  .mobile-nav .burger-menu .dropdown-menu {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 0.25rem);
+    background-color: #181818;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  .mobile-nav .burger-menu .dropdown-menu li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mobile-nav i {
+    font-size: 30px;
+  }
+  .mobile-nav img {
+    width: auto;
+    height: 105px;
+  }
+  .mobile-nav .contacts {
+    padding: 0;
+    padding-right: 37px;
   }
 }
 .home-title {
@@ -308,6 +340,11 @@ nav .contacts li a {
   }
   .cards-container .card-link i:hover {
     transform: scale(1.5);
+  }
+}
+@media screen and (max-width: 800px) {
+  .works-title {
+    padding-top: 100px;
   }
 }
 .about-title {
@@ -524,5 +561,12 @@ button[type=submit]:hover {
     padding-left: 17px;
     font-family: "Comforter", cursive;
     font-size: 24px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    padding-top: 31%;
+    padding-left: 3%;
   }
 }

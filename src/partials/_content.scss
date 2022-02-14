@@ -260,6 +260,14 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+
+    .works-title {
+        padding-top: 100px;
+    }
+}
+
 // About home
 
 .about-title {
@@ -489,6 +497,14 @@
         padding-left: 17px;
         font-family: 'Comforter', cursive;
         font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        padding-top: 31%;
+        padding-left: 3%;
     }
   }
   

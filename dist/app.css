@@ -207,6 +207,7 @@ nav .contacts li a {
 .works-title {
   text-align: center;
   font-size: 50px;
+  padding-bottom: 30px;
 }
 .works-title p {
   font-size: 20px;
@@ -226,10 +227,15 @@ nav .contacts li a {
   -webkit-text-fill-color: transparent;
 }
 
-.cards-container {
+#others {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
 }
 .cards-container .card {
   width: 25%;
@@ -258,6 +264,7 @@ nav .contacts li a {
 }
 .cards-container .card-link i {
   font-size: 40px;
+  padding-left: 20px;
   background: linear-gradient(to right, #00e9ff, #c177cc, #c59dd0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

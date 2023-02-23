@@ -81,6 +81,7 @@
 .works-title {
     text-align: center;
     font-size: 50px;
+    padding-bottom: 30px;
 
     p {
         font-size: 20px;
@@ -104,11 +105,16 @@
     }
 }
 
+#others {
+    @include display-flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 
 .cards-container {
     @include display-flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
 
     .card {
         width: calc( 100% / 4);
@@ -143,6 +149,7 @@
             
             i {
                 font-size: 40px;
+                padding-left: 20px;
                 background: linear-gradient(to right, #00e9ff, #c177cc, #c59dd0);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;
